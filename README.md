@@ -1,5 +1,5 @@
 # From Prompt to Payload
-he project investigates how large language models (LLMs) perform in web application penetration testing compared to human testers in a controlled Capture-the-Flag (CTF) environment.
+The project investigates how large language models (LLMs) perform in web application penetration testing compared to human testers in a controlled Capture-the-Flag (CTF) environment.
 
 The repository serves as an archive of documentation used in the thesis experiments, including participant instructions, technical setup descriptions, experimental scenarios, and tester writeups. This repository does not contain any code or the vulnerable application itself.
 The modified DVWA environment used in the experiments is maintained in a separate repository.
