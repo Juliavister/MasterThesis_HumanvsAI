@@ -5,9 +5,8 @@ The repository serves as an archive of documentation used in the thesis experime
 The modified DVWA environment used in the experiments is maintained in a separate repository.
 
 ## Tester Writeups
-- 2 writeups from human participants
-  - one in group WA and the other in WOA
-- Modeling containing analysis of attack paths and strategies for the two testers
+- Writeups from the human participants
+  - group WA and in WOA
 - Data table containing analysis from all testers
 - Information sheet provided to testers
 - Baseline Attack Path writeup
@@ -15,5 +14,5 @@ The modified DVWA environment used in the experiments is maintained in a separat
 ## AI Experiments
 - Claude + MCP + Kali Linux set up used for the AI testing 
 - Claude test runs log (Response and terminal history)
-- Writeups written by Claude
+- Writeups written by Claude (when it was written)
 - Modeling containing analysis of attack paths and strategies for each test run
