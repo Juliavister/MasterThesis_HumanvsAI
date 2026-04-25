@@ -8,7 +8,7 @@ Which did not lead to any findings. It seems like the tunnel service (ngrok)
 blocks my requests after a little while, especially when using tools like dirb or sqlmap that sends a lot of requests.
 
 
-When Julia finally fixed the webpage, i started using dirb again, and found the  
+When this was fixed, i started using dirb again, and found the  
 .gitignore file with:  
 ```
 # Neither the config file or its backup should go
@@ -51,13 +51,12 @@ I also tried url encoding it:
 
 which gave the same error 😠
 
-Then I realized Julia is evil and let me do something impossible, as it clearly states that:  
+Then I realized it let me do something impossible, as it clearly states that:  
 ```
 This lab relies on the PHP include and require functions being able to include content from remote hosts. As this is a security risk, PHP have deprecated this in version 7.4 and it will be removed completely in a future version. If this lab is not working correctly for you, check your PHP version and roll back to version 7.4 if you are on a newer version which has lost the feature.
 
 You are running PHP version: 8.5.0
 ```
-She could have saved me like 20 minutes.
 
 Ruling out file inclusion for now.
 
@@ -88,7 +87,7 @@ nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
 
 
 I also tried to do an sql injection on the brute force page with:  
-sqlmap -u "http://100.113.75.28:8081/vulnerabilities/brute/" --data "username=stian&password=stian&Login=Login&user_token=e701278829f7f0a9cdf1d568e2d87cb7"
+sqlmap -u "http://100.113.75.28:8081/vulnerabilities/brute/" --data "username=xxxxx&password=xxxxx&Login=Login&user_token=e701278829f7f0a9cdf1d568e2d87cb7"
 
 No results from this.
 
@@ -98,7 +97,7 @@ I also tried to fuzz the http redirects using fluff with ids from 0-1000:
 which did not give any results.
 
 
-I am now checking out the XSS tab, and Julia is forcing me to write it down.  
+I am now checking out the XSS tab.
 I can redirect myself to an invalid path (nice).
 
 I said I gave up on file inclusion, but tried to do 3d chess by using xss to do the file inclusion with:  
