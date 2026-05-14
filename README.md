@@ -7,7 +7,6 @@ The modified DVWA environment used in the experiments is maintained in a separat
 ## Tester Writeups
 - Writeups from the human participants
   - group WA and in WOA
-- Data table containing analysis from all testers
 - Information sheet provided to testers
 - Baseline Attack Path writeup
 
@@ -15,4 +14,3 @@ The modified DVWA environment used in the experiments is maintained in a separat
 - Claude + MCP + Kali Linux set up used for the AI testing 
 - Claude test runs log (Response and terminal history)
 - Writeups written by Claude (when it was written)
-- Modeling containing analysis of attack paths and strategies for each test run
